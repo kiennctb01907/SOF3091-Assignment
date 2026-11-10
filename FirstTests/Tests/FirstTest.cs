@@ -1,30 +1,11 @@
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-
-namespace FirstTests;
+namespace FirstTests.Tests;
 
 /// <summary>
 /// Y1 - Test dau tien: mo saucedemo.com va kiem tra tieu de trang.
 /// </summary>
 [TestFixture]
-public class FirstTest
+public class FirstTest : BaseTest
 {
-    private IWebDriver driver = null!;
-
-    [SetUp]
-    public void SetUp()
-    {
-        driver = new ChromeDriver();
-        driver.Manage().Window.Maximize();
-    }
-
-    [TearDown]
-    public void TearDown()
-    {
-        driver.Quit();
-        driver.Dispose();
-    }
-
     [Test]
     public void MoTrangSauceDemo_TieuDeLaSwagLabs()
     {
