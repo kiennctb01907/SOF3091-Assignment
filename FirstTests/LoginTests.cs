@@ -1,10 +1,12 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
 
 namespace FirstTests;
 
 /// <summary>
 /// Y2 - Tu dong hoa luong voi Selenium (phien ban "script-based", truoc khi refactor sang POM o Y4).
+/// Y3 - Moi buoc doc ket qua deu cho tuong minh bang WebDriverWait (khong dung ngu co dinh).
 /// Locator uu tien id / data-test, KHONG dung XPath dai.
 /// </summary>
 [TestFixture]
@@ -13,12 +15,14 @@ public class LoginTests
     private const string BaseUrl = "https://www.saucedemo.com/";
 
     private IWebDriver driver = null!;
+    private WebDriverWait wait = null!;
 
     [SetUp]
     public void SetUp()
     {
         driver = new ChromeDriver();
         driver.Manage().Window.Maximize();
+        wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         driver.Navigate().GoToUrl(BaseUrl);
     }
 
@@ -29,12 +33,20 @@ public class LoginTests
         driver.Dispose();
     }
 
+    // Cho tuong minh: tra ve phan tu khi da HIEN THI tren trang.
+    private IWebElement ChoHienThi(By locator) =>
+        wait.Until(d =>
+        {
+            var e = d.FindElement(locator);
+            return e.Displayed ? e : null;
+        })!;
+
     // Ham dung chung: gom cac buoc dang nhap de cac ca test tai su dung.
     private void DangNhap(string username, string password)
     {
-        driver.FindElement(By.Id("user-name")).SendKeys(username);
-        driver.FindElement(By.Id("password")).SendKeys(password);
-        driver.FindElement(By.Id("login-button")).Click();
+        ChoHienThi(By.Id("user-name")).SendKeys(username);
+        ChoHienThi(By.Id("password")).SendKeys(password);
+        ChoHienThi(By.Id("login-button")).Click();
     }
 
     // ---------- Y2 (bat buoc): luong dang nhap ----------
@@ -44,8 +56,9 @@ public class LoginTests
     {
         DangNhap("standard_user", "secret_sauce");
 
+        wait.Until(d => d.Url.Contains("inventory.html"));   // trang chuyen buoc
         Assert.That(driver.Url, Does.Contain("inventory.html"));
-        Assert.That(driver.FindElement(By.CssSelector("[data-test='title']")).Text, Is.EqualTo("Products"));
+        Assert.That(ChoHienThi(By.CssSelector("[data-test='title']")).Text, Is.EqualTo("Products"));
     }
 
     [Test]
@@ -53,7 +66,7 @@ public class LoginTests
     {
         DangNhap("standard_user", "sai_mat_khau");
 
-        string loi = driver.FindElement(By.CssSelector("[data-test='error']")).Text;
+        string loi = ChoHienThi(By.CssSelector("[data-test='error']")).Text;   // thong bao loi xuat hien co do tre
         Assert.That(loi, Does.Contain("Username and password do not match any user"));
         Assert.That(driver.Url, Is.EqualTo(BaseUrl));
     }
@@ -63,7 +76,7 @@ public class LoginTests
     {
         DangNhap("locked_out_user", "secret_sauce");
 
-        string loi = driver.FindElement(By.CssSelector("[data-test='error']")).Text;
+        string loi = ChoHienThi(By.CssSelector("[data-test='error']")).Text;
         Assert.That(loi, Does.Contain("this user has been locked out"));
     }
 
@@ -74,17 +87,38 @@ public class LoginTests
     {
         DangNhap("standard_user", "secret_sauce");
 
-        driver.FindElement(By.Id("add-to-cart-sauce-labs-backpack")).Click();
-        Assert.That(driver.FindElement(By.CssSelector("[data-test='shopping-cart-badge']")).Text, Is.EqualTo("1"));
+        ChoHienThi(By.Id("add-to-cart-sauce-labs-backpack")).Click();
+        Assert.That(ChoHienThi(By.CssSelector("[data-test='shopping-cart-badge']")).Text, Is.EqualTo("1"));
 
-        driver.FindElement(By.CssSelector("[data-test='shopping-cart-link']")).Click();
+        ChoHienThi(By.CssSelector("[data-test='shopping-cart-link']")).Click();
 
+        wait.Until(d => d.Url.Contains("cart.html"));
         Assert.That(driver.Url, Does.Contain("cart.html"));
+        ChoHienThi(By.CssSelector("[data-test='inventory-item-name']"));
         var tenTrongGio = driver
             .FindElements(By.CssSelector("[data-test='inventory-item-name']"))
             .Select(e => e.Text)
             .ToList();
         Assert.That(tenTrongGio, Is.EqualTo(new[] { "Sauce Labs Backpack" }));
+    }
+
+    // ---------- Sap xep gia tang dan (Lab 3 - Phan B) ----------
+
+    [Test]
+    public void SapXepGiaThapDenCao_DanhSachGiaTangDan()
+    {
+        DangNhap("standard_user", "secret_sauce");
+
+        var dropdown = new SelectElement(ChoHienThi(By.CssSelector("[data-test='product-sort-container']")));
+        dropdown.SelectByValue("lohi");
+
+        var gia = driver
+            .FindElements(By.CssSelector("[data-test='inventory-item-price']"))
+            .Select(e => decimal.Parse(e.Text.Replace("$", ""), System.Globalization.CultureInfo.InvariantCulture))
+            .ToList();
+
+        Assert.That(gia, Has.Count.EqualTo(6));
+        Assert.That(gia, Is.Ordered.Ascending);
     }
 
     // ---------- Thu thap du lieu san pham (Lab 2 - Phan C) ----------
@@ -94,6 +128,7 @@ public class LoginTests
     {
         DangNhap("standard_user", "secret_sauce");
 
+        ChoHienThi(By.CssSelector("[data-test='inventory-item']"));
         var items = driver.FindElements(By.CssSelector("[data-test='inventory-item']"));
         Assert.That(items, Has.Count.EqualTo(6));
 

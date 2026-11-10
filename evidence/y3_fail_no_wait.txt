@@ -1,0 +1,36 @@
+﻿  Determining projects to restore...
+  All projects are up-to-date for restore.
+  FirstTests -> C:\Users\Kien\Downloads\drive-download-20261110T011528Z-1-001\SOF3091_Assignment\FirstTests\bin\Debug\net8.0\FirstTests.dll
+Test run for C:\Users\Kien\Downloads\drive-download-20261110T011528Z-1-001\SOF3091_Assignment\FirstTests\bin\Debug\net8.0\FirstTests.dll (.NETCoreApp,Version=v8.0)
+A total of 1 test files matched the specified pattern.
+NUnit Adapter 4.5.0.0: Test execution started
+Running selected tests in C:\Users\Kien\Downloads\drive-download-20261110T011528Z-1-001\SOF3091_Assignment\FirstTests\bin\Debug\net8.0\FirstTests.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Explicit run
+NUnit Adapter 4.5.0.0: Test execution complete
+  Failed KhongCho_TimNgay_BiNoSuchElement [7 s]
+  Error Message:
+   OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"css selector","selector":"#finish"}
+  (Session info: chrome=157.0.8103.38); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+  Stack Trace:
+     at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__6_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at FirstTests.WaitTests.KhongCho_TimNgay_BiNoSuchElement() in C:\Users\Kien\Downloads\drive-download-20261110T011528Z-1-001\SOF3091_Assignment\FirstTests\WaitTests.cs:line 57
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+
+Total tests: 1
+     Failed: 1
+dotnet : Test Run Failed.
+At line:3 char:1
++ dotnet test --filter "Name=KhongCho_TimNgay_BiNoSuchElement" --logger ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Test Run Failed.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ Total time: 8.7144 Seconds
