@@ -1,0 +1,11 @@
+﻿  Failed KhongCho_TimNgay_BiNoSuchElement [7 s]
+  Error Message:
+   OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"css selector","selector":"#finish"}
+  (Session info: chrome=157.0.8103.38); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+  Stack Trace:
+  ...
+at FirstTests.WaitTests.KhongCho_TimNgay_BiNoSuchElement() in C:\Users\Kien\Downloads\drive-download-20261110T011528Z-1-001\SOF3091_Assignment\FirstTests\WaitTests.cs:line 57
+
+Total tests: 1
+     Failed: 1
+ Total time: 8.7144 Seconds

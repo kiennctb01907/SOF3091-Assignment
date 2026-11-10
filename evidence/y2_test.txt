@@ -1,0 +1,26 @@
+﻿Test run for C:\Users\Kien\AppData\Local\Temp\claude\dc4b49426bd0d3d2\1161059f-e7b1-4cec-9b81-018b0d560954\scratchpad\wt_y2\FirstTests\bin\Debug\net8.0\FirstTests.dll (.NETCoreApp,Version=v8.0)
+A total of 1 test files matched the specified pattern.
+NUnit Adapter 4.5.0.0: Test execution started
+Running all tests in C:\Users\Kien\AppData\Local\Temp\claude\dc4b49426bd0d3d2\1161059f-e7b1-4cec-9b81-018b0d560954\scratchpad\wt_y2\FirstTests\bin\Debug\net8.0\FirstTests.dll
+   NUnit3TestExecutor discovered 6 of 6 NUnit test cases using Current Discovery mode, Non-Explicit run
+Tieu de trang: Swag Labs
+
+  Passed MoTrangSauceDemo_TieuDeLaSwagLabs [1 s]
+  Passed DangNhapHopLe_VaoDuocTrangSanPham [2 s]
+  Passed DangNhapSaiMatKhau_HienThongBaoLoi [2 s]
+  Passed DangNhapTaiKhoanBiKhoa_HienThongBaoLoi [2 s]
+  Passed ThemSanPhamVaoGio_MoGioHang_ThayDungSanPham [2 s]
+Sauce Labs Backpack - $29.99
+Sauce Labs Bike Light - $9.99
+Sauce Labs Bolt T-Shirt - $15.99
+Sauce Labs Fleece Jacket - $49.99
+Sauce Labs Onesie - $7.99
+Test.allTheThings() T-Shirt (Red) - $15.99
+
+NUnit Adapter 4.5.0.0: Test execution complete
+  Passed TrangSanPham_CoDu6SanPham_GiaBatDauBangDauDoLa [2 s]
+
+Test Run Successful.
+Total tests: 6
+     Passed: 6
+ Total time: 14.9019 Seconds

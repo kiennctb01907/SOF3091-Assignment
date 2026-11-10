@@ -1,0 +1,10 @@
+﻿PS> Select-String -Path FirstTests\Tests\*.cs -Pattern "By" -CaseSensitive
+(khong co ket qua)  -> Tests: 0 locator
+
+PS> Select-String -Path FirstTests\Pages\*.cs -Pattern "Assert"
+(khong co ket qua)  -> Pages: 0 Assert
+
+PS> Select-String -Path FirstTests\Pages\*.cs -Pattern "public .*IWebElement"
+(khong co ket qua)  -> khong Page nao tra ve IWebElement
+
+Dem thuc te:  By trong Tests = 0 | Assert trong Pages = 0 | public IWebElement trong Pages = 0

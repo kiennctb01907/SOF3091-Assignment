@@ -1,0 +1,5 @@
+﻿3d579d6 (HEAD -> main) refactor: doi locator nut dang nhap sang data-test, chi sua mot cho trong LoginPage
+bc6d850 refactor: chuyen cac test sang Page Object Model (BasePage, LoginPage, InventoryPage, CartPage)
+ac59e2c fix: thay moi cho co dinh bang WebDriverWait va them ca test tinh huong thuc te
+a92fe3f test: them luong dang nhap va luong them san pham vao gio hang
+3882877 feat: khoi tao du an NUnit va cai Selenium WebDriver

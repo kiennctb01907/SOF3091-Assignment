@@ -1,0 +1,12 @@
+﻿PS> Select-String -Path FirstTests -Include *.cs -Pattern "Thread.Sleep"
+Tim thay: 0 ket qua  ->  Thread.Sleep: 0 (KHONG con Thread.Sleep trong du an)
+
+PS> Select-String -Pattern "WebDriverWait" (cac cho dung cho tuong minh)
+BasePage.cs:7  /// Lop co so cho moi Page: giu driver + WebDriverWait va cung cap ham Tim(By) co CHO TUONG MINH.
+BasePage.cs:13  protected readonly WebDriverWait wait;
+BasePage.cs:18  wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutGiay));
+BasePage.cs:23  wait.Until(d =>
+BasePage.cs:31  wait.Until(d =>
+BasePage.cs:49  protected void ChoUrlChua(string phanUrl) => wait.Until(d => d.Url.Contains(phanUrl));
+DynamicLoadingPage.cs:34  wait.Until(d => d.FindElements(thanhLoading).Count == 0 || !d.FindElement(thanhLoading).Displayed);
+WaitTests.cs:27  /// <summary>BUOC 2 - SUA: cung kich ban nhung doc ket qua qua WebDriverWait -> PASS on dinh.</summary>
