@@ -3,8 +3,8 @@ using FirstTests.Pages;
 namespace FirstTests.Tests;
 
 /// <summary>
-/// Y3 + Y4 - Xu ly tinh huong thuc te &amp; cho tuong minh (da chuyen sang Page Object).
-/// Trang /dynamic_loading/2: #finish chi duoc JavaScript TAO RA sau vai giay.
+/// Y3 + Y4 - Xu ly tinh huong thuc te va cho tuong minh (da chuyen sang Page Object).
+/// Trang /dynamic-loading/2: #finish chi duoc JavaScript TAO RA sau vai giay.
 /// </summary>
 [TestFixture]
 public class WaitTests : BaseTest
