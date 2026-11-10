@@ -1,0 +1,27 @@
+﻿  Determining projects to restore...
+  All projects are up-to-date for restore.
+  FirstTests -> C:\Users\Kien\Downloads\drive-download-20261110T011528Z-1-001\SOF3091_Assignment\FirstTests\bin\Debug\net8.0\FirstTests.dll
+Test run for C:\Users\Kien\Downloads\drive-download-20261110T011528Z-1-001\SOF3091_Assignment\FirstTests\bin\Debug\net8.0\FirstTests.dll (.NETCoreApp,Version=v8.0)
+A total of 1 test files matched the specified pattern.
+NUnit Adapter 4.5.0.0: Test execution started
+Running selected tests in C:\Users\Kien\Downloads\drive-download-20261110T011528Z-1-001\SOF3091_Assignment\FirstTests\bin\Debug\net8.0\FirstTests.dll
+   NUnit3TestExecutor discovered 6 of 6 NUnit test cases using Current Discovery mode, Non-Explicit run
+  Passed SapXepGiaThapDenCao_DanhSachGiaTangDan [2 s]
+  Passed ThemSanPhamVaoGio_MoGioHang_ThayDungSanPham [3 s]
+Sauce Labs Backpack - $29.99
+Sauce Labs Bike Light - $9.99
+Sauce Labs Bolt T-Shirt - $15.99
+Sauce Labs Fleece Jacket - $49.99
+Sauce Labs Onesie - $7.99
+Test.allTheThings() T-Shirt (Red) - $15.99
+
+  Passed TrangSanPham_CoDu6SanPham_GiaBatDauBangDauDoLa [3 s]
+  Passed DangNhapHopLe_VaoDuocTrangSanPham [2 s]
+  Passed DangNhapSaiMatKhau_HienThongBaoLoi [2 s]
+NUnit Adapter 4.5.0.0: Test execution complete
+  Passed DangNhapTaiKhoanBiKhoa_HienThongBaoLoi [2 s]
+
+Test Run Successful.
+Total tests: 6
+     Passed: 6
+ Total time: 16.5706 Seconds

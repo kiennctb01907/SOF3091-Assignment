@@ -1,0 +1,15 @@
+﻿git : warning: in the working copy of 'FirstTests/Pages/LoginPage.cs', LF will be replaced by CRLF the next time Git 
+touches it
+At line:7 char:1
++ git diff -U0 -- FirstTests/Pages/LoginPage.cs 2>&1 | Out-File -Encodi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (warning: in the... Git touches it:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+diff --git a/FirstTests/Pages/LoginPage.cs b/FirstTests/Pages/LoginPage.cs
+index 4489c9b..7b20815 100644
+--- a/FirstTests/Pages/LoginPage.cs
++++ b/FirstTests/Pages/LoginPage.cs
+@@ -13 +13 @@ public class LoginPage : BasePage
+-    private readonly By nutDangNhap = By.Id("login-button");
++    private readonly By nutDangNhap = By.CssSelector("[data-test='login-button']");

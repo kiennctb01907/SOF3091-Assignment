@@ -10,7 +10,7 @@ public class LoginPage : BasePage
     // ===== Locator: day la NOI DUY NHAT khai bao locator cua trang dang nhap =====
     private readonly By oTenDangNhap = By.Id("user-name");
     private readonly By oMatKhau = By.Id("password");
-    private readonly By nutDangNhap = By.Id("login-button");
+    private readonly By nutDangNhap = By.CssSelector("[data-test='login-button']");
     private readonly By thongBaoLoi = By.CssSelector("[data-test='error']");
 
     public LoginPage(IWebDriver driver) : base(driver) { }
