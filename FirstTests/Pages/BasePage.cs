@@ -41,7 +41,27 @@ public abstract class BasePage
         e.SendKeys(text);
     }
 
-    protected void Bam(By locator) => Tim(locator).Click();
+    /// <summary>
+    /// Bam vao phan tu: cuon phan tu ra giua man hinh roi click; neu bi che (quang cao, banner...)
+    /// thi cho va thu lai den khi het timeout.
+    /// </summary>
+    protected void Bam(By locator)
+    {
+        wait.Until(d =>
+        {
+            try
+            {
+                var e = Tim(locator);
+                ((IJavaScriptExecutor)d).ExecuteScript("arguments[0].scrollIntoView({block: 'center'});", e);
+                e.Click();
+                return true;
+            }
+            catch (ElementClickInterceptedException)
+            {
+                return false;
+            }
+        });
+    }
 
     protected string LayChu(By locator) => Tim(locator).Text;
 

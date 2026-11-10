@@ -2,10 +2,13 @@ using OpenQA.Selenium;
 
 namespace FirstTests.Pages;
 
-/// <summary>Trang the-internet /dynamic_loading/2 - phan tu #finish duoc JavaScript tao ra sau vai giay.</summary>
+/// <summary>
+/// Trang practice.expandtesting.com /dynamic-loading/2 - phan tu #finish duoc JavaScript tao ra sau vai giay.
+/// (Truoc day dung the-internet.herokuapp.com nhung trang do bi loi 503 nen doi sang trang nay, cau truc giong nhau.)
+/// </summary>
 public class DynamicLoadingPage : BasePage
 {
-    public const string Url = "https://the-internet.herokuapp.com/dynamic_loading/2";
+    public const string Url = "https://practice.expandtesting.com/dynamic-loading/2";
 
     private readonly By nutStart = By.CssSelector("#start button");
     private readonly By thanhLoading = By.Id("loading");
