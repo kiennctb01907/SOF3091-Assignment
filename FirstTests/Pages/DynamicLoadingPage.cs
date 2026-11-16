@@ -3,13 +3,11 @@ using OpenQA.Selenium;
 namespace FirstTests.Pages;
 
 /// <summary>
-/// Trang practice.expandtesting.com /dynamic-loading/2 - phan tu #finish duoc JavaScript tao ra sau vai giay.
-/// (Truoc day dung the-internet.herokuapp.com nhung trang do bi loi 503 nen doi sang trang nay, cau truc giong nhau.)
+/// Trang dynamic-loading/2 - phan tu #finish duoc JavaScript tao ra sau vai giay.
+/// Dia chi trang lay tu khoa DynamicLoadingUrl trong appsettings.json.
 /// </summary>
 public class DynamicLoadingPage : BasePage
 {
-    public const string Url = "https://practice.expandtesting.com/dynamic-loading/2";
-
     private readonly By nutStart = By.CssSelector("#start button");
     private readonly By thanhLoading = By.Id("loading");
     private readonly By ketQua = By.Id("finish");
@@ -19,7 +17,7 @@ public class DynamicLoadingPage : BasePage
 
     public DynamicLoadingPage MoTrang()
     {
-        driver.Navigate().GoToUrl(Url);
+        driver.Navigate().GoToUrl(cfg.DynamicLoadingUrl);
         return this;
     }
 

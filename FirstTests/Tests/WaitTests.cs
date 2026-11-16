@@ -1,3 +1,4 @@
+using FirstTests.Core;
 using FirstTests.Pages;
 
 namespace FirstTests.Tests;
@@ -46,7 +47,7 @@ public class WaitTests : BaseTest
     [Test]
     public void CoCho_TrangChuyenBuoc_PerformanceGlitchUser_VaoDuocTrangSanPham()
     {
-        var inventory = new LoginPage(driver).MoTrang().DangNhap("performance_glitch_user", "secret_sauce");
+        var inventory = new LoginPage(driver).DangNhap("performance_glitch_user", "secret_sauce");
 
         Assert.That(inventory.DaHienThi(), Is.True);
     }

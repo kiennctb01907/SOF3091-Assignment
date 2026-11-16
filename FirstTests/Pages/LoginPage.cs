@@ -5,8 +5,6 @@ namespace FirstTests.Pages;
 /// <summary>Trang dang nhap saucedemo. Locator chi nam o day (private readonly By).</summary>
 public class LoginPage : BasePage
 {
-    public const string Url = "https://www.saucedemo.com/";
-
     // ===== Locator: day la NOI DUY NHAT khai bao locator cua trang dang nhap =====
     private readonly By oTenDangNhap = By.Id("user-name");
     private readonly By oMatKhau = By.Id("password");
@@ -17,7 +15,7 @@ public class LoginPage : BasePage
 
     public LoginPage MoTrang()
     {
-        driver.Navigate().GoToUrl(Url);
+        driver.Navigate().GoToUrl(cfg.BaseUrl);
         return this;
     }
 
@@ -37,10 +35,30 @@ public class LoginPage : BasePage
 
     public string LayThongBaoLoi() => LayChu(thongBaoLoi);
 
+    /// <summary>Co thong bao loi dang hien tren trang khong (khong cho, khong nem loi).</summary>
+    public bool CoThongBaoLoi() => driver.FindElements(thongBaoLoi).Any(e => e.Displayed);
+
     private void NhapThongTinVaBam(string tenDangNhap, string matKhau)
     {
         Nhap(oTenDangNhap, tenDangNhap);
         Nhap(oMatKhau, matKhau);
         Bam(nutDangNhap);
+        ChoKetQuaDangNhap();
+    }
+
+    /// <summary>
+    /// Sau khi bam Login thi cho mot trong hai: hien thong bao loi, hoac da roi khoi trang dang nhap
+    /// (nut Login khong con). Nho vay ca dung lan ca sai deu khong phai cho het timeout.
+    /// </summary>
+    private void ChoKetQuaDangNhap()
+    {
+        try
+        {
+            wait.Until(d => d.FindElements(thongBaoLoi).Any(e => e.Displayed) || d.FindElements(nutDangNhap).Count == 0);
+        }
+        catch (WebDriverTimeoutException)
+        {
+            // de cho buoc kiem tra phia sau tu bao ket qua
+        }
     }
 }

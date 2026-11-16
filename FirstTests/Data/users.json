@@ -1,0 +1,98 @@
+[
+  {
+    "Username": "standard_user",
+    "Password": "secret_sauce",
+    "ThanhCong": true,
+    "LoaiCa": "Thuong",
+    "ThongBaoLoi": "",
+    "GhiChu": "Tai khoan chuan, dang nhap binh thuong"
+  },
+  {
+    "Username": "problem_user",
+    "Password": "secret_sauce",
+    "ThanhCong": true,
+    "LoaiCa": "Thuong",
+    "ThongBaoLoi": "",
+    "GhiChu": "Vao duoc trang san pham (anh san pham bi loi nhung khong anh huong dang nhap)"
+  },
+  {
+    "Username": "visual_user",
+    "Password": "secret_sauce",
+    "ThanhCong": true,
+    "LoaiCa": "Thuong",
+    "ThongBaoLoi": "",
+    "GhiChu": "Tai khoan giao dien bi lech nhung van dang nhap duoc"
+  },
+  {
+    "Username": "",
+    "Password": "secret_sauce",
+    "ThanhCong": false,
+    "LoaiCa": "Bien",
+    "ThongBaoLoi": "Username is required",
+    "GhiChu": "Bo trong ten dang nhap"
+  },
+  {
+    "Username": "standard_user",
+    "Password": "",
+    "ThanhCong": false,
+    "LoaiCa": "Bien",
+    "ThongBaoLoi": "Password is required",
+    "GhiChu": "Bo trong mat khau"
+  },
+  {
+    "Username": " standard_user ",
+    "Password": "secret_sauce",
+    "ThanhCong": false,
+    "LoaiCa": "Bien",
+    "ThongBaoLoi": "Username and password do not match",
+    "GhiChu": "Thua khoang trang hai dau ten dang nhap, trang khong tu cat khoang trang"
+  },
+  {
+    "Username": "STANDARD_USER",
+    "Password": "secret_sauce",
+    "ThanhCong": false,
+    "LoaiCa": "Bien",
+    "ThongBaoLoi": "Username and password do not match",
+    "GhiChu": "Ten dang nhap viet hoa, kiem tra co phan biet hoa thuong"
+  },
+  {
+    "Username": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "Password": "secret_sauce",
+    "ThanhCong": false,
+    "LoaiCa": "Bien",
+    "ThongBaoLoi": "Username and password do not match",
+    "GhiChu": "Ten dang nhap rat dai (256 ky tu)"
+  },
+  {
+    "Username": "' OR '1'='1",
+    "Password": "' OR '1'='1",
+    "ThanhCong": false,
+    "LoaiCa": "Loi",
+    "ThongBaoLoi": "Username and password do not match",
+    "GhiChu": "Ky tu dac biet kieu SQL injection, khong duoc vao"
+  },
+  {
+    "Username": "standard_user",
+    "Password": "sai_mat_khau",
+    "ThanhCong": false,
+    "LoaiCa": "Loi",
+    "ThongBaoLoi": "Username and password do not match",
+    "GhiChu": "Sai mat khau"
+  },
+  {
+    "Username": "locked_out_user",
+    "Password": "secret_sauce",
+    "ThanhCong": false,
+    "LoaiCa": "Loi",
+    "ThongBaoLoi": "this user has been locked out",
+    "GhiChu": "Tai khoan bi khoa"
+  },
+  {
+    "Username": "error_user",
+    "Password": "secret_sauce",
+    "ThanhCong": true,
+    "LoaiCa": "Thuong",
+    "ThongBaoLoi": "",
+    "GhiChu": "Bo du lieu them sau: chi sua file JSON, khong sua file .cs nao"
+  }
+]

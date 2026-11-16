@@ -16,11 +16,23 @@ public class InventoryPage : BasePage
 
     public InventoryPage(IWebDriver driver) : base(driver) { }
 
-    /// <summary>Trang san pham da hien thi (URL dung + co tieu de "Products").</summary>
+    /// <summary>
+    /// Trang san pham da hien thi chua (URL dung + co tieu de "Products").
+    /// Ham tra loi CO/KHONG nen khong duoc nem loi: neu khong vao duoc trang thi tra ve false
+    /// sau toi da 3 giay, de cac ca dang nhap sai van chay toi cau Assert.
+    /// </summary>
     public bool DaHienThi()
     {
-        ChoUrlChua("inventory.html");
-        return LayChu(tieuDeTrang) == "Products";
+        try
+        {
+            return new WebDriverWait(driver, TimeSpan.FromSeconds(3)).Until(d =>
+                d.Url.Contains("inventory.html")
+                && d.FindElements(tieuDeTrang).Any(e => e.Displayed && e.Text == "Products"));
+        }
+        catch (WebDriverTimeoutException)
+        {
+            return false;
+        }
     }
 
     public InventoryPage SapXep(string giaTri)
