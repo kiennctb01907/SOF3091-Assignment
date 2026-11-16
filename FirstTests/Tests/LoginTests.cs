@@ -4,10 +4,10 @@ using FirstTests.Pages;
 namespace FirstTests.Tests;
 
 /// <summary>Cac ca dang nhap co dinh (Y2). Bo du lieu dang nhap day du nam o DataDrivenLoginTests.</summary>
-[TestFixture]
+[TestFixture, Category("Login")]
 public class LoginTests : BaseTest
 {
-    [Test]
+    [Test, Category("Smoke")]
     public void DangNhapHopLe_VaoDuocTrangSanPham()
     {
         var inventory = new LoginPage(driver).DangNhap("standard_user", "secret_sauce");

@@ -1,4 +1,5 @@
 using FirstTests.Config;
+using FirstTests.Utilities;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
@@ -38,6 +39,7 @@ public abstract class BasePage
 
     protected void Nhap(By locator, string text)
     {
+        Log.Info($"Nhap vao {locator}");
         var e = Tim(locator);
         e.Clear();
         e.SendKeys(text);
@@ -49,6 +51,7 @@ public abstract class BasePage
     /// </summary>
     protected void Bam(By locator)
     {
+        Log.Info($"Bam {locator}");
         wait.Until(d =>
         {
             try

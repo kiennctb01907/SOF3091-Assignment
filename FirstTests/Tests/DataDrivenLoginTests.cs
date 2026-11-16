@@ -8,7 +8,7 @@ namespace FirstTests.Tests;
 /// Y5 - Data-Driven: mot ham test chay lai cho tung bo du lieu trong Data/users.json.
 /// Them hay bot bo du lieu chi can sua file JSON, khong sua file .cs nao.
 /// </summary>
-[TestFixture]
+[TestFixture, Category("Login"), Category("DataDriven")]
 public class DataDrivenLoginTests : BaseTest
 {
     // Nguon du lieu phai la static vi NUnit goi no truoc khi tao doi tuong cua lop
