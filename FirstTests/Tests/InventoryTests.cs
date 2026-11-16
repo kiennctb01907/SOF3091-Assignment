@@ -1,22 +1,20 @@
+using FirstTests.Core;
 using FirstTests.Pages;
 
 namespace FirstTests.Tests;
 
-/// <summary>Y2 (luong 2) + Lab 3 Phan B + Y4 Phan D - cac ca tren trang san pham, dung POM va chaining.</summary>
+/// <summary>Cac ca tren trang san pham: gio hang, sap xep gia, thu thap du lieu san pham.</summary>
 [TestFixture]
 public class InventoryTests : BaseTest
 {
-    private InventoryPage inventory = null!;
-
-    [SetUp]
-    public void DangNhapTruoc()
-    {
-        inventory = new LoginPage(driver).MoTrang().DangNhap("standard_user", "secret_sauce");
-    }
+    // BaseTest da mo san trang dang nhap, o day chi can dang nhap bang tai khoan chuan
+    private InventoryPage DangNhapChuan() => new LoginPage(driver).DangNhap("standard_user", "secret_sauce");
 
     [Test]
     public void ThemSanPhamVaoGio_MoGioHang_ThayDungSanPham()
     {
+        var inventory = DangNhapChuan();
+
         inventory.ThemVaoGio("sauce-labs-backpack");
         Assert.That(inventory.LaySoLuongTrenBieuTuongGio(), Is.EqualTo("1"));
 
@@ -29,8 +27,8 @@ public class InventoryTests : BaseTest
     [Test]
     public void SapXepGiaThapDenCao_DanhSachGiaTangDan()
     {
-        // Chaining: tu trang san pham -> sap xep -> lay gia
-        var gia = inventory.SapXep("lohi").LayDanhSachGia();
+        // Chaining: dang nhap -> sap xep -> lay gia
+        var gia = DangNhapChuan().SapXep("lohi").LayDanhSachGia();
 
         Assert.That(gia, Has.Count.EqualTo(6));
         Assert.That(gia, Is.Ordered.Ascending);
@@ -39,7 +37,7 @@ public class InventoryTests : BaseTest
     [Test]
     public void TrangSanPham_CoDu6SanPham_GiaBatDauBangDauDoLa()
     {
-        var sanPham = inventory.LayThongTinSanPham();
+        var sanPham = DangNhapChuan().LayThongTinSanPham();
         Assert.That(sanPham, Has.Count.EqualTo(6));
 
         foreach (var (ten, gia) in sanPham)

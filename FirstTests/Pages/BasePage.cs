@@ -1,3 +1,4 @@
+using FirstTests.Config;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
@@ -5,17 +6,18 @@ namespace FirstTests.Pages;
 
 /// <summary>
 /// Lop co so cho moi Page: giu driver + WebDriverWait va cung cap ham Tim(By) co CHO TUONG MINH.
-/// Cac Page con KHONG tu khai bao lai driver / wait.
+/// Cac Page con KHONG tu khai bao lai driver / wait. Thoi gian cho lay tu appsettings.json.
 /// </summary>
 public abstract class BasePage
 {
     protected readonly IWebDriver driver;
     protected readonly WebDriverWait wait;
+    protected readonly TestConfig cfg = ConfigReader.Load();
 
-    protected BasePage(IWebDriver driver, int timeoutGiay = 10)
+    protected BasePage(IWebDriver driver, int? timeoutGiay = null)
     {
         this.driver = driver;
-        wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutGiay));
+        wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutGiay ?? cfg.TimeoutSeconds));
     }
 
     /// <summary>Tim phan tu KEM cho: doi den khi phan tu ton tai va hien thi.</summary>
