@@ -86,5 +86,13 @@
     "LoaiCa": "Loi",
     "ThongBaoLoi": "this user has been locked out",
     "GhiChu": "Tai khoan bi khoa"
+  },
+  {
+    "Username": "error_user",
+    "Password": "secret_sauce",
+    "ThanhCong": true,
+    "LoaiCa": "Thuong",
+    "ThongBaoLoi": "",
+    "GhiChu": "Bo du lieu them sau: chi sua file JSON, khong sua file .cs nao"
   }
 ]
