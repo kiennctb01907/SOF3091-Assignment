@@ -1,0 +1,14 @@
+﻿Test run for C:\Users\Kien\Downloads\drive-download-20261110T011528Z-1-001\SOF3091_Assignment\FirstTests\bin\Debug\net8.0\FirstTests.dll (.NETCoreApp,Version=v8.0)
+A total of 1 test files matched the specified pattern.
+Sauce Labs Backpack - $29.99
+Sauce Labs Bike Light - $9.99
+Sauce Labs Bolt T-Shirt - $15.99
+Sauce Labs Fleece Jacket - $49.99
+Sauce Labs Onesie - $7.99
+Test.allTheThings() T-Shirt (Red) - $15.99
+
+Tieu de trang: Swag Labs
+
+  Skipped KhongCho_TimNgay_BiNoSuchElement [< 1 ms]
+
+Passed!  - Failed:     0, Passed:    22, Skipped:     0, Total:    22, Duration: 1 m 3 s - FirstTests.dll (net8.0)
