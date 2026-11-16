@@ -1,0 +1,14 @@
+[2026-11-16 19:53:32.922] [INFO ] [T16] [DangNhapHopLe_VaoDuocTrangSanPham] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:53:32.922] [INFO ] [T17] [MoTrangSauceDemo_TieuDeLaSwagLabs] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:53:34.228] [INFO ] [T17] [MoTrangSauceDemo_TieuDeLaSwagLabs] Da mo https://www.saucedemo.com/
+[2026-11-16 19:53:34.275] [INFO ] [T17] [MoTrangSauceDemo_TieuDeLaSwagLabs] OK - xong sau 1.4s
+[2026-11-16 19:53:34.767] [INFO ] [T16] [DangNhapHopLe_VaoDuocTrangSanPham] Da mo https://www.saucedemo.com/
+[2026-11-16 19:53:34.793] [INFO ] [T16] [DangNhapHopLe_VaoDuocTrangSanPham] Nhap vao By.Id: user-name
+[2026-11-16 19:53:34.936] [INFO ] [T16] [DangNhapHopLe_VaoDuocTrangSanPham] Nhap vao By.Id: password
+[2026-11-16 19:53:35.016] [INFO ] [T16] [DangNhapHopLe_VaoDuocTrangSanPham] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:53:35.253] [INFO ] [T16] [DangNhapHopLe_VaoDuocTrangSanPham] OK - xong sau 2.3s
+[2026-11-16 19:53:43.515] [INFO ] [T15] [KhongCho_TimNgay_BiNoSuchElement] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:53:44.491] [INFO ] [T15] [KhongCho_TimNgay_BiNoSuchElement] Da mo https://www.saucedemo.com/
+[2026-11-16 19:53:46.863] [INFO ] [T15] [KhongCho_TimNgay_BiNoSuchElement] Bam By.CssSelector: #start button
+[2026-11-16 19:53:46.995] [ERROR] [T15] [KhongCho_TimNgay_BiNoSuchElement] ROT sau 3.5s: OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"css selector","selector":"#finish"}
+[2026-11-16 19:53:47.064] [ERROR] [T15] [KhongCho_TimNgay_BiNoSuchElement] Da chup man hinh: C:\Users\Kien\Downloads\drive-download-20261110T011528Z-1-001\SOF3091_Assignment\FirstTests\bin\Debug\net8.0\failed-screenshots\KhongCho_TimNgay_BiNoSuchElement_195346.png
