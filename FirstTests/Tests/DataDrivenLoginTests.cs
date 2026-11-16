@@ -8,7 +8,11 @@ namespace FirstTests.Tests;
 /// Y5 - Data-Driven: mot ham test chay lai cho tung bo du lieu trong Data/users.json.
 /// Them hay bot bo du lieu chi can sua file JSON, khong sua file .cs nao.
 /// </summary>
-[TestFixture]
+[TestFixture, Category("Login"), Category("DataDriven")]
+// Lop nay co 12 ca, neu chay lan luot thi la lop cham nhat. Cho moi ca mot doi tuong rieng
+// (InstancePerTestCase) de cac ca trong lop nay cung chay song song duoc ma khong dung chung driver.
+[FixtureLifeCycle(LifeCycle.InstancePerTestCase)]
+[Parallelizable(ParallelScope.Children)]
 public class DataDrivenLoginTests : BaseTest
 {
     // Nguon du lieu phai la static vi NUnit goi no truoc khi tao doi tuong cua lop

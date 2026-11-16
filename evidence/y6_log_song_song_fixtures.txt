@@ -1,0 +1,127 @@
+[2026-11-16 19:46:41.475] [INFO ] [T14] [SapXepGiaThapDenCao_DanhSachGiaTangDan] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:46:41.475] [INFO ] [T17] [DangNhap_01_Thuong_standard_user] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:46:41.475] [INFO ] [T16] [DangNhapHopLe_VaoDuocTrangSanPham] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:46:41.475] [INFO ] [T15] [MoTrangSauceDemo_TieuDeLaSwagLabs] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:46:44.369] [INFO ] [T14] [SapXepGiaThapDenCao_DanhSachGiaTangDan] Da mo https://www.saucedemo.com/
+[2026-11-16 19:46:44.395] [INFO ] [T14] [SapXepGiaThapDenCao_DanhSachGiaTangDan] Nhap vao By.Id: user-name
+[2026-11-16 19:46:44.498] [INFO ] [T14] [SapXepGiaThapDenCao_DanhSachGiaTangDan] Nhap vao By.Id: password
+[2026-11-16 19:46:44.576] [INFO ] [T14] [SapXepGiaThapDenCao_DanhSachGiaTangDan] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:46:44.925] [INFO ] [T14] [SapXepGiaThapDenCao_DanhSachGiaTangDan] OK - xong sau 3.5s
+[2026-11-16 19:46:45.087] [INFO ] [T14] [ThemSanPhamVaoGio_MoGioHang_ThayDungSanPham] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:46:47.377] [INFO ] [T17] [DangNhap_01_Thuong_standard_user] Da mo https://www.saucedemo.com/
+[2026-11-16 19:46:47.379] [INFO ] [T17] [DangNhap_01_Thuong_standard_user] Nhap vao By.Id: user-name
+[2026-11-16 19:46:47.519] [INFO ] [T17] [DangNhap_01_Thuong_standard_user] Nhap vao By.Id: password
+[2026-11-16 19:46:47.618] [INFO ] [T17] [DangNhap_01_Thuong_standard_user] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:46:47.812] [INFO ] [T16] [DangNhapHopLe_VaoDuocTrangSanPham] Da mo https://www.saucedemo.com/
+[2026-11-16 19:46:47.813] [INFO ] [T16] [DangNhapHopLe_VaoDuocTrangSanPham] Nhap vao By.Id: user-name
+[2026-11-16 19:46:47.875] [INFO ] [T17] [DangNhap_01_Thuong_standard_user] OK - xong sau 6.4s
+[2026-11-16 19:46:47.987] [INFO ] [T16] [DangNhapHopLe_VaoDuocTrangSanPham] Nhap vao By.Id: password
+[2026-11-16 19:46:48.078] [INFO ] [T17] [DangNhap_02_Thuong_problem_user] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:46:48.118] [INFO ] [T16] [DangNhapHopLe_VaoDuocTrangSanPham] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:46:48.366] [INFO ] [T16] [DangNhapHopLe_VaoDuocTrangSanPham] OK - xong sau 6.9s
+[2026-11-16 19:46:48.532] [INFO ] [T16] [DangNhapSaiMatKhau_HienThongBaoLoi] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:46:51.945] [INFO ] [T14] [ThemSanPhamVaoGio_MoGioHang_ThayDungSanPham] Da mo https://www.saucedemo.com/
+[2026-11-16 19:46:51.946] [INFO ] [T14] [ThemSanPhamVaoGio_MoGioHang_ThayDungSanPham] Nhap vao By.Id: user-name
+[2026-11-16 19:46:52.069] [INFO ] [T14] [ThemSanPhamVaoGio_MoGioHang_ThayDungSanPham] Nhap vao By.Id: password
+[2026-11-16 19:46:52.156] [INFO ] [T14] [ThemSanPhamVaoGio_MoGioHang_ThayDungSanPham] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:46:52.316] [INFO ] [T14] [ThemSanPhamVaoGio_MoGioHang_ThayDungSanPham] Bam By.Id: add-to-cart-sauce-labs-backpack
+[2026-11-16 19:46:52.407] [INFO ] [T14] [ThemSanPhamVaoGio_MoGioHang_ThayDungSanPham] Bam By.CssSelector: [data-test='shopping-cart-link']
+[2026-11-16 19:46:52.508] [INFO ] [T14] [ThemSanPhamVaoGio_MoGioHang_ThayDungSanPham] OK - xong sau 7.4s
+[2026-11-16 19:46:52.661] [INFO ] [T14] [TrangSanPham_CoDu6SanPham_GiaBatDauBangDauDoLa] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:46:54.895] [INFO ] [T16] [DangNhapSaiMatKhau_HienThongBaoLoi] Da mo https://www.saucedemo.com/
+[2026-11-16 19:46:54.896] [INFO ] [T16] [DangNhapSaiMatKhau_HienThongBaoLoi] Nhap vao By.Id: user-name
+[2026-11-16 19:46:55.011] [INFO ] [T16] [DangNhapSaiMatKhau_HienThongBaoLoi] Nhap vao By.Id: password
+[2026-11-16 19:46:55.105] [INFO ] [T16] [DangNhapSaiMatKhau_HienThongBaoLoi] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:46:55.165] [INFO ] [T17] [DangNhap_02_Thuong_problem_user] Da mo https://www.saucedemo.com/
+[2026-11-16 19:46:55.166] [INFO ] [T17] [DangNhap_02_Thuong_problem_user] Nhap vao By.Id: user-name
+[2026-11-16 19:46:55.268] [INFO ] [T16] [DangNhapSaiMatKhau_HienThongBaoLoi] OK - xong sau 6.7s
+[2026-11-16 19:46:55.324] [INFO ] [T17] [DangNhap_02_Thuong_problem_user] Nhap vao By.Id: password
+[2026-11-16 19:46:55.475] [INFO ] [T17] [DangNhap_02_Thuong_problem_user] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:46:55.499] [INFO ] [T16] [DangNhapTaiKhoanBiKhoa_HienThongBaoLoi] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:46:55.688] [INFO ] [T14] [TrangSanPham_CoDu6SanPham_GiaBatDauBangDauDoLa] Da mo https://www.saucedemo.com/
+[2026-11-16 19:46:55.690] [INFO ] [T14] [TrangSanPham_CoDu6SanPham_GiaBatDauBangDauDoLa] Nhap vao By.Id: user-name
+[2026-11-16 19:46:55.731] [INFO ] [T17] [DangNhap_02_Thuong_problem_user] OK - xong sau 7.7s
+[2026-11-16 19:46:55.864] [INFO ] [T14] [TrangSanPham_CoDu6SanPham_GiaBatDauBangDauDoLa] Nhap vao By.Id: password
+[2026-11-16 19:46:55.930] [INFO ] [T17] [DangNhap_03_Thuong_visual_user] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:46:55.987] [INFO ] [T14] [TrangSanPham_CoDu6SanPham_GiaBatDauBangDauDoLa] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:46:57.437] [INFO ] [T14] [TrangSanPham_CoDu6SanPham_GiaBatDauBangDauDoLa] OK - xong sau 4.8s
+[2026-11-16 19:46:57.975] [INFO ] [T14] [CoCho_PhanTuTaiCham_HienHelloWorld] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:46:58.305] [INFO ] [T15] [MoTrangSauceDemo_TieuDeLaSwagLabs] Da mo https://www.saucedemo.com/
+[2026-11-16 19:46:58.311] [INFO ] [T15] [MoTrangSauceDemo_TieuDeLaSwagLabs] OK - xong sau 16.9s
+[2026-11-16 19:46:59.185] [INFO ] [T16] [DangNhapTaiKhoanBiKhoa_HienThongBaoLoi] Da mo https://www.saucedemo.com/
+[2026-11-16 19:46:59.186] [INFO ] [T16] [DangNhapTaiKhoanBiKhoa_HienThongBaoLoi] Nhap vao By.Id: user-name
+[2026-11-16 19:46:59.348] [INFO ] [T16] [DangNhapTaiKhoanBiKhoa_HienThongBaoLoi] Nhap vao By.Id: password
+[2026-11-16 19:46:59.458] [INFO ] [T16] [DangNhapTaiKhoanBiKhoa_HienThongBaoLoi] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:46:59.627] [INFO ] [T16] [DangNhapTaiKhoanBiKhoa_HienThongBaoLoi] OK - xong sau 4.1s
+[2026-11-16 19:46:59.778] [INFO ] [T17] [DangNhap_03_Thuong_visual_user] Da mo https://www.saucedemo.com/
+[2026-11-16 19:46:59.779] [INFO ] [T17] [DangNhap_03_Thuong_visual_user] Nhap vao By.Id: user-name
+[2026-11-16 19:46:59.937] [INFO ] [T17] [DangNhap_03_Thuong_visual_user] Nhap vao By.Id: password
+[2026-11-16 19:47:00.032] [INFO ] [T17] [DangNhap_03_Thuong_visual_user] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:47:00.222] [INFO ] [T17] [DangNhap_03_Thuong_visual_user] OK - xong sau 4.3s
+[2026-11-16 19:47:00.401] [INFO ] [T17] [DangNhap_04_Bien_(trong)] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:47:00.772] [INFO ] [T14] [CoCho_PhanTuTaiCham_HienHelloWorld] Da mo https://www.saucedemo.com/
+[2026-11-16 19:47:02.877] [INFO ] [T17] [DangNhap_04_Bien_(trong)] Da mo https://www.saucedemo.com/
+[2026-11-16 19:47:02.877] [INFO ] [T17] [DangNhap_04_Bien_(trong)] Nhap vao By.Id: user-name
+[2026-11-16 19:47:02.946] [INFO ] [T17] [DangNhap_04_Bien_(trong)] Nhap vao By.Id: password
+[2026-11-16 19:47:03.009] [INFO ] [T17] [DangNhap_04_Bien_(trong)] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:47:04.433] [INFO ] [T14] [CoCho_PhanTuTaiCham_HienHelloWorld] Bam By.CssSelector: #start button
+[2026-11-16 19:47:06.183] [INFO ] [T17] [DangNhap_04_Bien_(trong)] OK - xong sau 5.8s
+[2026-11-16 19:47:06.324] [INFO ] [T17] [DangNhap_05_Bien_standard_user] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:47:08.008] [INFO ] [T17] [DangNhap_05_Bien_standard_user] Da mo https://www.saucedemo.com/
+[2026-11-16 19:47:08.009] [INFO ] [T17] [DangNhap_05_Bien_standard_user] Nhap vao By.Id: user-name
+[2026-11-16 19:47:08.090] [INFO ] [T17] [DangNhap_05_Bien_standard_user] Nhap vao By.Id: password
+[2026-11-16 19:47:08.150] [INFO ] [T17] [DangNhap_05_Bien_standard_user] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:47:09.713] [INFO ] [T14] [CoCho_PhanTuTaiCham_HienHelloWorld] OK - xong sau 11.7s
+[2026-11-16 19:47:09.897] [INFO ] [T14] [CoCho_ThanhLoadingBienMat_RoiMoiDocKetQua] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:47:11.324] [INFO ] [T17] [DangNhap_05_Bien_standard_user] OK - xong sau 5.0s
+[2026-11-16 19:47:11.441] [INFO ] [T14] [CoCho_ThanhLoadingBienMat_RoiMoiDocKetQua] Da mo https://www.saucedemo.com/
+[2026-11-16 19:47:11.502] [INFO ] [T17] [DangNhap_06_Bien__standard_user_] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:47:13.923] [INFO ] [T17] [DangNhap_06_Bien__standard_user_] Da mo https://www.saucedemo.com/
+[2026-11-16 19:47:13.923] [INFO ] [T17] [DangNhap_06_Bien__standard_user_] Nhap vao By.Id: user-name
+[2026-11-16 19:47:14.016] [INFO ] [T17] [DangNhap_06_Bien__standard_user_] Nhap vao By.Id: password
+[2026-11-16 19:47:14.097] [INFO ] [T17] [DangNhap_06_Bien__standard_user_] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:47:14.826] [INFO ] [T14] [CoCho_ThanhLoadingBienMat_RoiMoiDocKetQua] Bam By.CssSelector: #start button
+[2026-11-16 19:47:17.289] [INFO ] [T17] [DangNhap_06_Bien__standard_user_] OK - xong sau 5.8s
+[2026-11-16 19:47:17.458] [INFO ] [T17] [DangNhap_07_Bien_STANDARD_USER] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:47:18.991] [INFO ] [T17] [DangNhap_07_Bien_STANDARD_USER] Da mo https://www.saucedemo.com/
+[2026-11-16 19:47:18.992] [INFO ] [T17] [DangNhap_07_Bien_STANDARD_USER] Nhap vao By.Id: user-name
+[2026-11-16 19:47:19.066] [INFO ] [T17] [DangNhap_07_Bien_STANDARD_USER] Nhap vao By.Id: password
+[2026-11-16 19:47:19.130] [INFO ] [T17] [DangNhap_07_Bien_STANDARD_USER] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:47:20.248] [INFO ] [T14] [CoCho_ThanhLoadingBienMat_RoiMoiDocKetQua] OK - xong sau 10.4s
+[2026-11-16 19:47:20.406] [INFO ] [T14] [CoCho_TrangChuyenBuoc_PerformanceGlitchUser_VaoDuocTrangSanPham] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:47:21.946] [INFO ] [T14] [CoCho_TrangChuyenBuoc_PerformanceGlitchUser_VaoDuocTrangSanPham] Da mo https://www.saucedemo.com/
+[2026-11-16 19:47:21.947] [INFO ] [T14] [CoCho_TrangChuyenBuoc_PerformanceGlitchUser_VaoDuocTrangSanPham] Nhap vao By.Id: user-name
+[2026-11-16 19:47:22.053] [INFO ] [T14] [CoCho_TrangChuyenBuoc_PerformanceGlitchUser_VaoDuocTrangSanPham] Nhap vao By.Id: password
+[2026-11-16 19:47:22.125] [INFO ] [T14] [CoCho_TrangChuyenBuoc_PerformanceGlitchUser_VaoDuocTrangSanPham] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:47:22.331] [INFO ] [T17] [DangNhap_07_Bien_STANDARD_USER] OK - xong sau 4.9s
+[2026-11-16 19:47:22.512] [INFO ] [T17] [DangNhap_08_Bien_aaaaaaaaaaaaaaaaaaaa...] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:47:24.247] [INFO ] [T17] [DangNhap_08_Bien_aaaaaaaaaaaaaaaaaaaa...] Da mo https://www.saucedemo.com/
+[2026-11-16 19:47:24.248] [INFO ] [T17] [DangNhap_08_Bien_aaaaaaaaaaaaaaaaaaaa...] Nhap vao By.Id: user-name
+[2026-11-16 19:47:24.505] [INFO ] [T17] [DangNhap_08_Bien_aaaaaaaaaaaaaaaaaaaa...] Nhap vao By.Id: password
+[2026-11-16 19:47:24.569] [INFO ] [T17] [DangNhap_08_Bien_aaaaaaaaaaaaaaaaaaaa...] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:47:27.285] [INFO ] [T14] [CoCho_TrangChuyenBuoc_PerformanceGlitchUser_VaoDuocTrangSanPham] OK - xong sau 6.9s
+[2026-11-16 19:47:27.742] [INFO ] [T17] [DangNhap_08_Bien_aaaaaaaaaaaaaaaaaaaa...] OK - xong sau 5.2s
+[2026-11-16 19:47:27.878] [INFO ] [T17] [DangNhap_09_Loi___OR__1___1] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:47:29.400] [INFO ] [T17] [DangNhap_09_Loi___OR__1___1] Da mo https://www.saucedemo.com/
+[2026-11-16 19:47:29.401] [INFO ] [T17] [DangNhap_09_Loi___OR__1___1] Nhap vao By.Id: user-name
+[2026-11-16 19:47:29.482] [INFO ] [T17] [DangNhap_09_Loi___OR__1___1] Nhap vao By.Id: password
+[2026-11-16 19:47:29.550] [INFO ] [T17] [DangNhap_09_Loi___OR__1___1] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:47:32.716] [INFO ] [T17] [DangNhap_09_Loi___OR__1___1] OK - xong sau 4.8s
+[2026-11-16 19:47:32.855] [INFO ] [T17] [DangNhap_10_Loi_standard_user] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:47:34.360] [INFO ] [T17] [DangNhap_10_Loi_standard_user] Da mo https://www.saucedemo.com/
+[2026-11-16 19:47:34.361] [INFO ] [T17] [DangNhap_10_Loi_standard_user] Nhap vao By.Id: user-name
+[2026-11-16 19:47:34.466] [INFO ] [T17] [DangNhap_10_Loi_standard_user] Nhap vao By.Id: password
+[2026-11-16 19:47:34.551] [INFO ] [T17] [DangNhap_10_Loi_standard_user] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:47:37.731] [INFO ] [T17] [DangNhap_10_Loi_standard_user] OK - xong sau 4.9s
+[2026-11-16 19:47:37.879] [INFO ] [T17] [DangNhap_11_Loi_locked_out_user] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:47:39.455] [INFO ] [T17] [DangNhap_11_Loi_locked_out_user] Da mo https://www.saucedemo.com/
+[2026-11-16 19:47:39.456] [INFO ] [T17] [DangNhap_11_Loi_locked_out_user] Nhap vao By.Id: user-name
+[2026-11-16 19:47:39.533] [INFO ] [T17] [DangNhap_11_Loi_locked_out_user] Nhap vao By.Id: password
+[2026-11-16 19:47:39.602] [INFO ] [T17] [DangNhap_11_Loi_locked_out_user] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:47:42.755] [INFO ] [T17] [DangNhap_11_Loi_locked_out_user] OK - xong sau 4.9s
+[2026-11-16 19:47:42.895] [INFO ] [T17] [DangNhap_12_Thuong_error_user] BAT DAU - trinh duyet chrome, headless=True
+[2026-11-16 19:47:44.410] [INFO ] [T17] [DangNhap_12_Thuong_error_user] Da mo https://www.saucedemo.com/
+[2026-11-16 19:47:44.411] [INFO ] [T17] [DangNhap_12_Thuong_error_user] Nhap vao By.Id: user-name
+[2026-11-16 19:47:44.484] [INFO ] [T17] [DangNhap_12_Thuong_error_user] Nhap vao By.Id: password
+[2026-11-16 19:47:44.552] [INFO ] [T17] [DangNhap_12_Thuong_error_user] Bam By.CssSelector: [data-test='login-button']
+[2026-11-16 19:47:44.691] [INFO ] [T17] [DangNhap_12_Thuong_error_user] OK - xong sau 1.8s

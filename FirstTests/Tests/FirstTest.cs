@@ -6,7 +6,7 @@ namespace FirstTests.Tests;
 /// Y1 - Test dau tien: kiem tra tieu de trang saucedemo.
 /// Tu Y5 viec mo trinh duyet va vao BaseUrl do BaseTest lam (doc tu appsettings.json).
 /// </summary>
-[TestFixture]
+[TestFixture, Category("Smoke")]
 public class FirstTest : BaseTest
 {
     [Test]

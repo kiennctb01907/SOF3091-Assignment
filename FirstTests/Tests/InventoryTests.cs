@@ -4,7 +4,7 @@ using FirstTests.Pages;
 namespace FirstTests.Tests;
 
 /// <summary>Cac ca tren trang san pham: gio hang, sap xep gia, thu thap du lieu san pham.</summary>
-[TestFixture]
+[TestFixture, Category("Inventory")]
 public class InventoryTests : BaseTest
 {
     // BaseTest da mo san trang dang nhap, o day chi can dang nhap bang tai khoan chuan
